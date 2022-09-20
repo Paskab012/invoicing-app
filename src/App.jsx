@@ -1,13 +1,21 @@
-import { Button } from 'semantic-ui-react';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Dashboard from './components/Dashboard';
+import Login from './components/Login';
+import Signup from './components/Signup';
+import WelcomePage from './components/Welcome';
 
-function App() {
+const App = () => {
   return (
-    <div className='App'>
-      <h1>Hello, here is my app</h1>
-      <Button>Click Here</Button>
-      <h1 class='text-2xl font-bold underline text-red-400'>Hello world!</h1>
-    </div>
+    <Router>
+      <Routes>
+        <Route path='/' element={<WelcomePage />}></Route>
+        <Route path='/home' element={<Dashboard />}></Route>
+        <Route path='/login' element={<Login />}></Route>
+        <Route path='/signup' element={<Signup />}></Route>
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
