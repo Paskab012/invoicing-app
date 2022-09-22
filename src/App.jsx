@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import ConfirmPassword from './components/ConfirmPassword';
 import Dashboard from './components/Dashboard';
 import Login from './components/Login';
 import Signup from './components/Signup';
@@ -9,10 +10,11 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path='/' element={<WelcomePage />}></Route>
-        <Route path='/home' element={<Dashboard />}></Route>
-        <Route path='/login' element={<Login />}></Route>
-        <Route path='/signup' element={<Signup />}></Route>
+        <Route path='/' element={<WelcomePage />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/signup' element={<Signup />} />
+        <Route path='/confirm' element={<ConfirmPassword />} />
+        <Route path='/home' element={<Dashboard />} />
       </Routes>
     </Router>
   );
