@@ -23,11 +23,17 @@ function Signup() {
                   alt='Sample image'
                 />
               </div>
-              <div className='xl:ml-20 lg:w-[35%] h-full md:w-8/12 mb-12 md:mb-0 bg-[#f2f2f2] rounded-lg p-6 shadow-sm'>
+              <div className='xl:ml-20 lg:w-[35%]  md:w-8/12 mb-12 md:mb-0 bg-[#f2f2f2] rounded-lg p-6 shadow-sm'>
                 <form>
                   <p className='text-sm font-semibold mb-2 text-titleColor'></p>
                   <p className='text-3xl font-bold text-center mb-8 text-titleColor'>
                     Sign Up
+                  </p>
+                  <p className='text-sm font-semibold mb-4 text-titleColor text-center'>
+                    Welcome to the {''}
+                    <span className='font-bold text-brightRed'>
+                      invoicing app
+                    </span>
                   </p>
                   <div className='mb-6'>
                     <input
@@ -94,7 +100,7 @@ function Signup() {
                     <p className='text-sm font-semibold mt-2 pt-1 mb-0'>
                       Already have an account?
                       <Link
-                        to='/login'
+                        to='/'
                         className='text-brightRed hover:text-red-700 focus:text-red-700 transition duration-200 ease-in-out ml-2'
                       >
                         Login

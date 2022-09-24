@@ -23,16 +23,16 @@ function Login() {
                 alt='Sample image'
               />
             </div>
-            <div className='xl:ml-20 lg:w-[35%] h-3/4 md:w-8/12 mb-12 md:mb-0 bg-[#f2f2f2] rounded-lg p-6 shadow-sm'>
+            <div className='xl:ml-20 lg:w-[35%] md:w-8/12 mb-12 md:mb-0 bg-[#f2f2f2] rounded-lg p-6 shadow-sm'>
               <form>
-                <p className='text-sm font-semibold mb-2 text-titleColor'>
-                  Welcome back to the
+                <p className='text-3xl font-bold text-center mb-4 text-titleColor'>
+                  Login
+                </p>
+                <p className='text-sm font-semibold mb-4 text-titleColor text-center'>
+                  Welcome back to the {''}
                   <span className='font-bold text-brightRed'>
                     invoicing app
                   </span>
-                </p>
-                <p className='text-3xl font-bold text-center mb-8 text-titleColor'>
-                  Sign in
                 </p>
                 <div className='mb-6'>
                   <input
