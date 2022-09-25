@@ -1,8 +1,11 @@
 import React from 'react';
 import Sidebar from './sidebar';
 import '../../style/style.css';
+import InvoiceModal from '../Modal';
 
 function Dashboard() {
+  const [open, setOpen] = React.useState(false);
+
   return (
     <>
       {/* <Sidebar /> */}
@@ -203,11 +206,11 @@ function Dashboard() {
                 </span>
               </a>
               <a
-                className='flex items-center px-4 py-2 space-x-2 text-indigo-500 bg-indigo-100 rounded-md hover:bg-indigo-200'
+                className='flex items-center px-4 py-2 space-x-2 text-blue-500 bg-indigo-100 rounded-md hover:bg-indigo-200'
                 href='#'
               >
                 <svg
-                  className='w-5 h-5 fill-indigo-500'
+                  className='w-5 h-5 fill-blue-500'
                   xmlns='http://www.w3.org/2000/svg'
                   viewBox='0 0 20 20'
                   fill='currentColor'
@@ -218,8 +221,12 @@ function Dashboard() {
                     clip-rule='evenodd'
                   ></path>
                 </svg>
-                <div className='hidden xs:block'>
-                  <span className='hidden sm:inline-block'>Create</span> New
+                <div
+                  className='hidden xs:block'
+                  onClick={() => setOpen(true)}
+                  open={open}
+                >
+                  <span className='hidden sm:inline-block'>Create</span> New Invoice
                 </div>
               </a>
               <a className href='#'>
@@ -460,6 +467,7 @@ function Dashboard() {
               </div>
             </div>
           </section>
+          <InvoiceModal open={open} setOpen={setOpen} />
         </main>
       </div>
     </>
