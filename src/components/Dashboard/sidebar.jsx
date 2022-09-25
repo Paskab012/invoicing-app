@@ -7,7 +7,7 @@ const Sidebar = () => {
       <div className='sidebar__container'>
         <div className='sidebar__header'>
           <div className='sidebar__logo'>
-            <div className=' w-full flex items-start'>
+            <div className='flex items-start w-full '>
               <img
                 src='/src/assets/exuus.webp'
                 className='w-[60px] h-full object-cover object-center'

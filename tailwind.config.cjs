@@ -1,7 +1,12 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme');
 module.exports = {
   content: ['./public/index.html', './src/**/*.{js,jsx,ts,tsx}'],
   theme: {
+    screens: {
+      xs: '350px',
+      ...defaultTheme.screens,
+    },
     extend: {
       colors: {
         brightRed: '#FF6363',
