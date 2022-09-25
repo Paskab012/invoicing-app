@@ -4,6 +4,8 @@ Cloning exercice
 
 ## OVERVIEW
 
+[Live version](https://exuus-invoicing-app.netlify.app/home)
+
 - Dashboard
   ![](dash.png)
 
@@ -15,7 +17,7 @@ Cloning exercice
 
 ## Run the project
 
-`npm run start`
+`Yarn start`
 
 ## Built With
 
