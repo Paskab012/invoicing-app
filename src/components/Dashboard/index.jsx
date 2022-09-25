@@ -226,7 +226,8 @@ function Dashboard() {
                   onClick={() => setOpen(true)}
                   open={open}
                 >
-                  <span className='hidden sm:inline-block'>Create</span> New Invoice
+                  <span className='hidden sm:inline-block'>Create</span> New
+                  Invoice
                 </div>
               </a>
               <a className href='#'>
